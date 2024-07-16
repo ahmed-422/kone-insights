@@ -46,7 +46,7 @@ def login():
 
 def authenticate(username, password):
     # Replace with your own authentication logic
-    return username == os.getenv("USER_NAME") and password == os.getenv("ST_PASSWORD")
+    return username == os.getenv("USER_NAME") or username == os.getenv("USER_NAME1") and password == os.getenv("ST_PASSWORD")
 
 def home():
     st.title("Data insights MVP")
