@@ -49,7 +49,7 @@ def authenticate(username, password):
     return username == os.getenv("USER_NAME") or username == os.getenv("USER_NAME1") and password == os.getenv("ST_PASSWORD")
 
 def home():
-    st.title("Data insights MVP")
+    st.title("Kone Insights")
     st.write("Ask anything, and I'll provide an answer with references!")
     
     # Text input field
